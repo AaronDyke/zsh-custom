@@ -1,7 +1,7 @@
 ZSH_THEME_NVM_PROMPT_PREFIX="ndoe:"
 ZSH_THEME_NVM_PROMPT_SUFFIX=""
 
-ZSH_THEME_GIT_PROMPT_PREFIX=""
+ZSH_THEME_GIT_PROMPT_PREFIX=":"
 ZSH_THEME_GIT_PROMPT_SUFFIX="->"
 ZSH_THEME_GIT_PROMPT_DIRTY=":💩"
 ZSH_THEME_GIT_PROMPT_CLEAN=":⭐️"
@@ -14,4 +14,4 @@ ZSH_THEME_GIT_PROMPT_MODIFIED="📝"
 ZSH_THEME_GIT_PROMPT_RENAMED="🙊"
 ZSH_THEME_GIT_PROMPT_UNTRACKED="🙈"
 
-PROMPT=$'╭ %4~ [$(git_prompt_info)$(git_prompt_status)]\n╰→ '
+PROMPT=$'╭ %2~ git:[$(git_repo_name)$(git_prompt_info)$(git_prompt_status)]\n╰→ '
